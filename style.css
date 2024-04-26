@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Shadows+Into+Light&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bungee Spice',sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 145px;
+    width: 100%;
+    gap: 20px;
+    /* background-color: #000; */
+    font-size: 30px;
+    position:absolute;
+    margin-left: 40px;
+}
+.boomVideo{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+#nav h3{
+    margin-right: 50px;
+}
+#nav h4{
+    color: #fff;
+    font-family: 'Shadows Into Light', cursive;
+}
+#nav>h4:hover{
+    animation: bounce 0.5s; 
+    animation-iteration-count: 1;
+}
+@keyframes bounce{ 
+    from { transform: translate3d(0, 0, 0);} 
+    to { transform: translate3d(20px, 0, 0);} 
+} 
